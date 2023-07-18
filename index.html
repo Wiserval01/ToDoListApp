@@ -11,19 +11,21 @@
 </head>
 <body>
  
-<div id="tasker" class="tasker">
-	<div id="error" class="error">Please Enter a Task</div>
-	<div id="todo-header" class="todo-header">
-		<input type="text" id="input-task" placeholder="Enter Your Task">
-		<button id="add-task"><i class="fa fa-fw fa-plus"></i>
-		</button>
-	</div>
-	<div class="todo-lists">
-		<ul id="tasks"></ul>
-	</div>
-</div>
- 
-<script  src="function.js"></script>
+	<div id="myDIV" class="header">
+		<h2>My To Do List</h2>
+		<input type="text" id="myInput" placeholder="Title...">
+		<span onclick="newElement()" class="addBtn">Add</span>
+	  </div>
+	  
+	  <ul id="myUL">
+		<li>Hit the gym</li>
+		<li class="checked">Pay bills</li>
+		<li>Meet George</li>
+		<li>Buy eggs</li>
+		<li>Read a book</li>
+		<li>Organize office</li>
+	  </ul>
  
 </body>
+<script  src="function.js"></script>
 </html>
